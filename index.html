@@ -5,22 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>3D Card</title>
 <link rel="stylesheet" href="assets/css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js" defer></script>
 <script src="assets/js/script.js" defer></script>
 </head>
 <body>
   <div class="card-wrap">
   
-    <div class="card">
-      <a href="">
-        Card 1
-        <div class="glow"></div>
+    <div class="card js-card">
+      <a href="" class="card__link">
+        <div class="card__wrapper">
+          <div class="card__img">
+            <img src="assets/images/photo_1.jpg" alt="">
+          </div>
+          <div class="card-effects js-card-effect">
+            <div class="card-effects__pattern"></div>
+            <div class="card-effects__color"></div>
+            <div class="card-effects__glow js-card-glow"></div>
+          </div>
+        </div>
       </a> 
     </div>
     
-    <div class="card">
-      <a href="">
-        Card 2
-        <div class="glow"></div>
+    <div class="card js-card">
+      <a href="" class="card__link">
+        <div class="card__wrapper">
+          <div class="card__img">
+            <img src="assets/images/photo_2.jpg" alt="">
+          </div>
+          <div class="card-effects js-card-effect">
+            <div class="card-effects__pattern"></div>
+            <div class="card-effects__color"></div>
+            <div class="card-effects__glow js-card-glow"></div>
+          </div>
+        </div>
       </a>
     </div>
   </div>
