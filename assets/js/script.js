@@ -70,10 +70,10 @@ class Card3D {
     // カードの中央を基準に上半分か下半分かを判定
     const isTopHalf = topY < this.bounds.height / 2;
 
-    // 🔥 X軸の回転: 上半分なら前に、下半分なら奥に傾く
+    // X軸の回転: 上半分なら前に、下半分なら奥に傾く
     const rotateX = isTopHalf ? -Math.abs(center.y / 10) : Math.abs(center.y / 10);
 
-    // 🔥 Y軸の回転: 左半分なら左が手前、右半分なら右が手前
+    // Y軸の回転: 左半分なら左が手前、右半分なら右が手前
     const rotateY = center.x / 10; // そのまま適用（左ならマイナス、右ならプラス）
 
     gsap.to(this.card, {
