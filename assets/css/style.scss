@@ -40,7 +40,10 @@ body {
   transition-duration: 300ms;
   transition-property: transform, box-shadow;
   transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
-  transform: rotate3d(0);
+  // transform: rotate3d(0);
+
+  // transform-style: preserve-3d;
+  // transform: rotateY(-20deg) rotateX(-20deg);
 }
 
 .card:hover {
@@ -114,7 +117,7 @@ body {
 
   mix-blend-mode: overlay;
 
-  opacity: calc(var(--opacity) * 0.5);
+  opacity: calc(var(--opacity) * 0.7);
   
 
   // background-image: radial-gradient(circle at var(--mouse-x) var(--mouse-y),#ffffff22, #0000000f);
